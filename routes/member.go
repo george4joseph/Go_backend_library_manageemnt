@@ -11,6 +11,6 @@ func MemberRoute(router *gin.Engine) {
 	router.POST("/members", controller.Members_Post)
 	router.PATCH("/member/:id", controller.Member_Patch)
 	router.DELETE("/member/:id", controller.Member_Del)
-
+	router.GET("/member/:id", controller.Member_Get)
 }
 

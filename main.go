@@ -13,5 +13,6 @@ func main() {
 	router := gin.Default()
 	config.Connect()
 	routes.MemberRoute(router)
+	routes.BookRoutes(router)
 	router.Run()
 }
